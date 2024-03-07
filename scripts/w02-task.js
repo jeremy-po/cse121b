@@ -44,6 +44,8 @@ foodElement.innerHTML = favoriteFoods.join('<br>');
 
 favoriteFoods.shift(); 
 
+foodElement.innerHTML += `<br>${favoriteFoods.join('<br>')}`;
+
 favoriteFoods.pop();
 
 foodElement.innerHTML += `<br>${favoriteFoods.join('<br>')}`;
