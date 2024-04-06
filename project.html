@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Scripture Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <style>
+    .scripture-container {
+      text-align: center;
+      margin-top: 50px; 
+    }
+    .scripture-text {
+      font-size: 24px; 
+      font-weight: bold; 
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html" class="active">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+
+  <main id="gridly">
+    <h1>Daily Scripture Generator</h1>
+    <div class="scripture-container">
+      <p class="scripture-text">Your Scripture for The Day is:</p>
+      <p id="scripture-text">Loading scripture...</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy;<span id="year"></span> | Daily Scripture Generator
+  </footer>
+
+  <script src="scripts/project.js"></script>
+</body>
+
+</html>
