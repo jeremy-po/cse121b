@@ -1,6 +1,6 @@
 async function getRandomScripture() {
     try {
-        const response = await fetch('json/book-of-mormon.json');
+        const response = await fetch('book-of-mormon.json');
         const data = await response.json(); 
         const books = data.books;
         const randomBookIndex = Math.floor(Math.random() * books.length);
